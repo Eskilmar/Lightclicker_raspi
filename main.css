@@ -1,0 +1,100 @@
+/*Bodyssä margin 0, jotta sivusto menee laidasta laitaan*/
+body {
+    background-color: #a2b4c3;
+    margin: 0px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+button {
+    height: 35px;
+    width: 45%;
+}
+/*Perus tyylimäärittelyt.*/
+#mainframe {
+    max-width: 960px;
+    min-width: 220px;
+    margin: auto;
+    text-align: center;
+    background-color: #cdd4db;
+    border: 1px solid black;
+}
+
+.nappilaatikko {
+    margin: 10px;
+}
+
+@media screen and (min-width: 517px) {
+    body {margin-top: 50px;}
+}
+
+.nappi_ON {
+    background-color: #0b212f;
+    color: white;
+}
+.nappi_OFF {
+    background-color: #44586a;
+    color: white;
+}
+
+/*Toggle Switch CSS*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 66px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #a2b4c3;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 58px;
+    width: 58px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #44586a;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #44586a;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(54px);
+    -ms-transform: translateX(54px);
+    transform: translateX(54px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
